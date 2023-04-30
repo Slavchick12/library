@@ -1,9 +1,10 @@
-from rest_framework import viewsets
-from .models import Book, Author
-from .serializers import BookSerializer, BookListSerializer
-from rest_framework import status
+from rest_framework import status, viewsets
 from rest_framework.response import Response
+
 from books.utils.constans import FAKE_AUTHOR
+
+from .models import Author, Book
+from .serializers import BookListSerializer, BookSerializer
 
 
 class BookViewSet(viewsets.ModelViewSet):

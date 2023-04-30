@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.models import Group
 
-from .models import Book, Author
+from .models import Author, Book
 
 admin.site.unregister(Group)
 
