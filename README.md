@@ -33,16 +33,15 @@ cd <path_to_project>/backend/
 ##### Шаг 2. Создайте файл *.env*
 ##### Шаг 3. Заполните *.env* следующем образом
 ```
-SECRET_KEY='django-insecure-sd!q&6x5i=m@k7nfpyu&)fiq2vt!jc9p7l*0#2y-piy+btydk='
 DB_ENGINE=django.db.backends.postgresql_psycopg2
-DB_NAME=<DB_NAME>
-DB_USER=<DB_USER>
-DB_PASSWORD=<DB_PASSWORD>
+DB_NAME=<DB_NAME, str>
+DB_USER=<DB_USER, str>
+DB_PASSWORD=<DB_PASSWORD, str>
 DB_HOST=127.0.0.1
 DB_PORT=5432
-SECRET_KEY=<SECRET_KEY>
-DEBUG=True
-TOKEN_LIFETIME_DAYS=<TOKEN_LIFETIME_DAYS>
+SECRET_KEY=<DJANGO_SECRET_KEY>
+DEBUG=<True/False>
+TOKEN_LIFETIME_DAYS=<TOKEN_LIFETIME_DAYS, int>
 ```
 #### Настройка виртуального окружения и проведение миграций
 ##### Шаг 1. Установка виртуального окружения
